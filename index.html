@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía y Horario de Clases</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #f20707; /*333*/
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: black;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 3px solid #2c3e50;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #fff;
+            margin-bottom: 5px;
+        }
+        h2 {
+            color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .perfil-container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background: black;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .foto-perfil {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #f20707;
+            background-color: #ddd;
+        }
+        .datos-basicos {
+            flex: 1;
+        }
+        .datos-basicos ul {
+            list-style: none;
+            padding: 0;
+        }
+        .datos-basicos li {
+            margin-bottom: 8px;
+        }
+        .seccion-contenido {
+            background: black;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: black;
+        }
+        th, td {
+            border: 1px solid #f20707;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: white;
+            color: black;
+        }
+        tr:nth-child(even) {
+            background-color: black;
+        }
+        tr:hover {
+            background-color: #8f8f8f;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Biografía Profesional Académica</h1>
+        <p>Perfil de Presentación y Cronograma Escolar</p>
+    </header>
+
+
+    <!-- A. Datos personales básicos y Foto -->
+    <section class="perfil-container">
+        <!-- Reemplaza 'tu-foto.jpg' por la ruta o enlace de tu imagen real -->
+        <img src="f1.jpg" alt="Foto de perfil de Tu Nombre" class="foto-perfil">
+        <div class="datos-basicos">
+            <h2>1. Datos Personales Básicos</h2>
+            <ul>
+                <li><strong>Nombre completo:</strong> Saul Alexander Sanchez Bautista</li>
+                <li><strong>Fecha y lugar de nacimiento:</strong> 14/12/2004 — San Cristobal, República Dominicana</li>
+                <li><strong>Nacionalidad:</strong> 100% Dominicano</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <!-- B. Horario de Clases en formato tabla  -->
+    <section class="seccion-contenido">
+        <h2>Horario de Clases</h2>
+        <p>Cronograma de asignaturas asignadas para el ciclo actual:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>07:00 - 09:00</strong></td>
+                    <td>—</td>
+                    <td>Sistemas Operativos</td>
+                    <td>Lab. Programación III (this)</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>10:00 - 13:00</strong></td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>Analisis Lineal y Matricial</td>
+                    <td>Analisis Lineal y Matricial</td>
+                </tr>
+                <tr>
+                    <td><strong>12:00 - 14:00</strong></td>
+                    <td colspan="5" style="background-color: black; color: #f20707;">Libertad!!</td>
+                </tr>
+                <tr>
+                    <td><strong>14:00 - 16:00</strong></td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>Base de Datos II</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>19:00 - 22:00</strong></td>
+                    <td>Análisis Y Diseño del Sistema</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+
+    <!-- C. Contexto familiar -->
+    <section class="seccion-contenido">
+        <h2>2. Contexto Familiar</h2>
+        <p><strong>Padres y hermanos:</strong> Merynalda y Cristobalina Diaz (Madre y Abuela), Zamira y Lemuel Bautista (Hermanos).</p>
+        <p><strong>Entorno de crecimiento:</strong> Barrio unido y tranquilo.</p>
+    </section>
+
+
+
+
+    <!-- D. Formación académica -->
+    <section class="seccion-contenido">
+        <h2>3. Formación Académica</h2>
+        <p><strong>Educación básica y media:</strong> Una travesia realmente: Casita Feliz (2007/8 - 2009 pre-kinder) y (2013 - 2014 parte de primaria), Col. Villa Guzman (2009 - 2010), Escuela Santa Rita (2011 - 2013) Colegio Adventista San Cristobal (2015 - 2023, terminé el nivel básico y cursé bachillerato el 2017).</p>
+        <p><strong>Estudios universitarios y posgrados:</strong> Estudio Lic. Informática en la UASD, y he hecho algunos cursos en el ITLA, y quiero hacer unos cuantos de INFOTEP.</p>
+        <p><strong>Becas y reconocimientos:</strong> Un estudiante promedio, sin reconocimientos especiales.</p>
+    </section>
+
+
+
+    <!-- E. Trayectoria profesional -->
+    <section class="seccion-contenido">
+        <h2>4. Trayectoria Profesional</h2>
+        <ul>
+            <li><strong>Cargos y funciones:</strong> Fui administrador de las redes en la distribuidora y/o importadora Aurora mall.</li>
+            <li><strong>Experiencia institucional:</strong> Estudio en la Universidad Autonoma de Santo Domingo.</li>
+            <li><strong>Aportes significativos:</strong> Tener un excelente servicio al cliente administrando las redes en Aurora Mall.</li>
+        </ul>
+    </section>
+
+
+    <!-- F. Producción intelectual o artística -->
+    <section class="seccion-contenido">
+        <h2>5. Producción Intelectual o Artística</h2>
+        <p><strong>Obras publicadas:</strong> Ninguna (Si videos de youtube o un juego matemático en HTML que hice no cuenta).</p>
+        <p><strong>Proyectos destacados y descubrimientos:</strong> Ningunos.</p>
+    </section>
+
+
+
+
+    <!-- 6. Reconocimientos y logros -->
+    <section class="seccion-contenido">
+        <h2>6. Reconocimientos y Logros</h2>
+        <ul>
+            <li>null</li>
+ 
+        </ul>
+    </section>
+
+    <!-- H. Aportes sociales y comunitarios -->
+    <section class="seccion-contenido">
+        <h2>7. Aportes Sociales y Comunitarios</h2>
+        <p><strong>Labor social y cultural:</strong> Hice una actividad de voluntariado en 6to secundaria, no me acuerdo el parque, pero fue en uno de santo domingo este.</p>
+        <p><strong>Asociaciones y fundaciones:</strong> Un partido politico en 2024, llamado PaisPosible.</p>
+    </section>
+
+</body>
+</html>
