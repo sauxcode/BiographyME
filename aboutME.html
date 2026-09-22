@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina personal web</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #f20707; /*333*/
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: black;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 3px solid #2c3e50;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #fff;
+            margin-bottom: 5px;
+        }
+        h2 {
+            color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .perfil-container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background: black;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .foto-perfil {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #f20707;
+            background-color: #ddd;
+        }
+        .datos-basicos {
+            flex: 1;
+        }
+        .datos-basicos ul {
+            list-style: none;
+            padding: 0;
+        }
+        .datos-basicos li {
+            margin-bottom: 8px;
+        }
+        .seccion-contenido {
+            background: black;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: black;
+        }
+        th, td {
+            border: 1px solid #f20707;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: white;
+            color: black;
+        }
+        tr:nth-child(even) {
+            background-color: black;
+        }
+        tr:hover {
+            background-color: #8f8f8f;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Biografía, personalidad y formalidad académica</h1>
+        <p>Perfil personal Presentación, Cronograma Escolar y más...</p>
+    </header>
+
+
+    <!-- A. Datos personales básicos y Foto -->
+    <section class="perfil-container">
+        <img src="f1.jpg" alt="Foto de perfil de Tu Nombre" class="foto-perfil">
+        <div class="datos-basicos">
+            <h2>Datos Personales Básicos y Académicos </h2>
+            <ul>
+                <li><strong>Nombre completo:</strong> Saul Alexander Sanchez Bautista</li>
+                <li><strong>Matrícula:</strong> 100737740</li>
+                <li><strong>Carrera:</strong> Lic. En informática</li>
+               
+            </ul>
+        </div>
+    </section>
+
+
+
+    <!-- B. Horario de Clases en formato tabla  -->
+    <section class="seccion-contenido">
+        <h2>Horario de Clases</h2>
+        <p>Horario de clases del semestre actual (hoy 22/9/26):</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>07:00 - 09:00</strong></td>
+                    <td>—</td>
+                    <td>Sistemas Operativos</td>
+                    <td>Lab. Programación III (this)</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>10:00 - 13:00</strong></td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>Analisis Lineal y Matricial</td>
+                    <td>Analisis Lineal y Matricial</td>
+                </tr>
+                <tr>
+                    <td><strong>12:00 - 14:00</strong></td>
+                    <td colspan="5" style="background-color: black; color: #f20707;">Libertad!!</td>
+                </tr>
+                <tr>
+                    <td><strong>14:00 - 16:00</strong></td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>Base de Datos II</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><strong>19:00 - 22:00</strong></td>
+                    <td>Análisis Y Diseño del Sistema</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <!-- C. Biografía breve -->
+        <section class="seccion-contenido">
+            <h2>Biografía personal</h2>
+            <p><strong>Sobre mí:</strong> </p>
+            <p>Nací y crecí en la ciudad y municipio de San Cristobal, tuve una infancia normal y muy significativa, pese a que fué limitada a diferencia de niños contemporáneos, siempre tuve la compañia de mis cercanos, ¿Cuales?, pues <a href="index.html"> (vease asig 2.2)</a>. Desde muy pequeño me ha interesado como funcionan las cosas a mi alrededor, por lo cual en cuanto tenía la oportunidad de desarmar un juguete, o algún aparato disfucional, lo hacía, esto, acompañado de ciertas habilidades que adquirí a medida que crecía, me ha dotado de cierta destreza para poder chequear y reparar equipos electrónicos, e incluso herramientas que no necesariamente deben ser electrónicas sin comprometer mucho o en lo absoluto el diseño del mismo, me formé académicamente en aleatorios colegios privados que también se detallan dentro del enlace un poco más arriba y actualmente estoy cursando la carrera de Lic. Informática en la uasd y capacitandome en cualquier curso gratis de ciertas entidades académicas de prestigio como el ITLA para seguir puliendo lo que ya sé y seguir aprendiendo más.  </p>
+        </section>
+
+
+    <!-- D. Lista de asignaturas -->
+    <section class="seccion-contenido">
+        <h2>Lista de asignaturas</h2>
+        <ul>
+            <li>Análisis y Diseño de Sistema</li>
+            <li>> Lab. Lenguaje de Programación III <</li>
+            <li>Sistemas Operativos</li>
+            <li>Base de Datos II</li>
+            <li>Análisis Lineal Y Matricial</li>
+        </ul>
+    </section>
+
+
+    <!-- E. Contactos -->
+    <section class="seccion-contenido">
+        <h2>Contáctame</h2>
+        <ul>
+            <li><strong>Correo Electrónico:</strong> <a href="mailto:saulalex728gr@gmail.com"> this</a></li>
+            <li><strong>¿Instagram?:</strong> <a href="https://www.instagram.com/sau.lexx_/"> @sau.lexx_ </a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/sauxcode"> sauxcode </a></li>
+        </ul>
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
